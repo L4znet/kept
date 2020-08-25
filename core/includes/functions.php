@@ -28,3 +28,10 @@ function loop_pictures($datas, $tag = ""){
     }
 }
 
+function get_tags(){
+    $folders = scandir('pictures');
+    $folders = array_diff($folders, array("..", ".", '.DS_Store'));
+    foreach($folders as $folder){
+        echo '<li><a class="nav_link" id="' . $folder .'" href="index.php?p=home&type=' . $folder .'">' . $folder .'</a></li>';
+    }
+}

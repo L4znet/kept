@@ -12,8 +12,8 @@
             <h1><span>K</span>ept</h1>
             <ul>
                 <h2>Vos moodboards</h2>
-                <li class="active"><a href="index.php?p=home">Tous</a></li>
-                <li><a href="index.php?p=home&type=website">Magazine</a></li>
-                <li><a href="index.php?p=home&type=others">Un autre</a></li>
+                <li class="active"><a class="nav_link" href="index.php?p=home">Tous</a></li>
+                <?php get_tags(); ?>
             </ul>
         </header>
+        <main>

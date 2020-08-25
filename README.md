@@ -9,4 +9,4 @@ Avec un ami, nous voulions créer notre propre Ember, nommé Kept, mais nous avo
 
 ## Comment ça marche ?
 
-Rien de plus simple, vous mettez vos images dans un dossier nommé comme vous le souhaitez (le type d'image qu'il contient, le thème etc..), et Kept s'occupe de tout :D
+Rien de plus simple, vous mettez vos images dans un dossier que vous nommez comme vous le souhaitez (le type d'image qu'il contient, le thème etc..), dans le dossier pictures, et Kept s'occupe de tout 🚀

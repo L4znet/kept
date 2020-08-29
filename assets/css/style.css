@@ -17,9 +17,9 @@ header nav {
 header h1 {
   margin-left: 20px;
   font-size: 40px;
-}
-header h1 span {
-  color: #6935ca;
+  background: linear-gradient(90deg, #2cbbdb 100%, rgba(0, 81, 99, 0) 0%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 header ul {
   display: flex;

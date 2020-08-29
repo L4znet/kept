@@ -16,10 +16,10 @@ header{
    h1{
     margin-left:20px;
     font-size:40px;
-    span{
-        color:$primary;
-    }
-    }
+    background:linear-gradient(90deg, rgba(44, 187, 219, 1) 100%, rgba(0, 81, 99, 0) 0%);
+-webkit-background-clip: text;
+color: transparent;
+   }
    ul{
        display: flex;
        margin:0;

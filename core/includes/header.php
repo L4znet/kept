@@ -9,11 +9,12 @@
 </head>
 <body>
         <header>
-            <h1><span>K</span>ept</h1>
-            <ul>
-                <h2>Vos moodboards</h2>
-                <li class="active"><a class="nav_link" href="index.php?p=home">Tous</a></li>
-                <?php get_tags(); ?>
-            </ul>
+            <h1><img src="assets/img/logo.svg" alt=""></h1>
+            <nav>
+                <ul>
+                    <li class="active"><a class="nav_link" href="index.php?p=home">Tous</a></li>
+                    <?php get_tags(); ?>
+                </ul>
+            </nav>
         </header>
         <main>

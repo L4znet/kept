@@ -23,22 +23,23 @@ function get_all(){
     $files = scandir('pictures');
     $files = array_diff($files, array("..", ".", '.DS_Store'));
     $files_array = array();
-    $test = array();
     foreach($files as $file){
-        $files_divided = scandir('pictures/' . $file);
+        if(!is_file('pictures/' . $file)){
+            $files_divided = scandir('pictures/' . $file);
             $files_divided = array_diff($files_divided, array("..", ".", '.DS_Store'));
             foreach($files_divided as $folder){
-
-                if(is_file('pictures/' . $folder)){
-                    array_push($files_array, $file);
-                } else if(is_dir('pictures/' . $folder)) {
-                    array_push($test, $file . '/' . $folder);
-                }
+                array_push($files_array, $file . '/' . $folder);
             }
+        } else if(is_file('pictures/' . $file)) {
+           $files_divided = scandir('pictures/' . $file);
+            $files_divided = array_diff($files_divided, array("..", ".", '.DS_Store'));
+            array_push($files_array, $file);
+        }
+
            
     }
+     return $files_array;
 
-    var_dump($test);
 }
 
 function loop_pictures($datas, $tag = ""){
@@ -57,7 +58,11 @@ function get_tags(){
     $folders = scandir('pictures');
     $folders = array_diff($folders, array("..", ".", '.DS_Store'));
     foreach($folders as $folder){
-        echo '<li><a class="nav_link" id="' . $folder .'" href="index.php?p=home&type=' . $folder .'">' . $folder .'</a></li>';
+        if(!is_file('pictures/' . $folder)){
+            echo '<li><a class="nav_link" id="' . $folder .'" href="index.php?p=home&type=' . $folder .'">' . $folder .'</a></li>';
+        } else {
+
+        }
     }
     echo '<li><a class="nav_link" id="others" href="index.php?p=home&type=others">Autres</a></li>';
 }

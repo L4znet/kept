@@ -73,10 +73,23 @@ header{
 }
 
 main{
-    img{
-        width:200px;
-        margin:10px;
+    display: flex;
+    flex-wrap:wrap;
+    width:100%;
+    .post {
+        min-width:30px;
+        width:auto;
+        max-width:1000px;
+        height:200px;
         border-radius: 5px;
+        overflow:hidden;
+        margin:20px;
+        display: flex;
+        justify-content: center;
+    img{
+        width:auto;
+        height:100%;
+    }
     }
 }
 

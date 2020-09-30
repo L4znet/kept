@@ -24,7 +24,9 @@ function get_all(){
 
 function loop_pictures($datas, $tag = ""){
     foreach($datas as $data){
+        echo "<div class='post'>"; 
         echo "<img src='pictures/" . $tag ."/". $data ."'>";
+        echo "</div>"; 
     }
 }
 

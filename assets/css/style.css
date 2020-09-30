@@ -65,10 +65,25 @@ header ul .active a {
   color: #008DF3;
 }
 
-main img {
-  width: 200px;
-  margin: 10px;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .post {
+  min-width: 30px;
+  width: auto;
+  max-width: 1000px;
+  height: 200px;
   border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+main .post img {
+  width: auto;
+  height: 100%;
 }
 
 .button_large {

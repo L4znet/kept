@@ -19,7 +19,13 @@ function get_by($tag)
     }
 }
 
+function remover($folder){
+    $folder = array_diff($folder, array("..", ".", '.DS_Store'));
+    return $folder;
+}
+
 function get_all(){
+
     $files = scandir('pictures');
     $files = array_diff($files, array("..", ".", '.DS_Store'));
     $files_array = array();
@@ -63,9 +69,23 @@ function get_tags(){
         if(!is_file('pictures/' . $folder)){
             echo '<li><a class="nav_link" id="' . $folder .'" href="index.php?p=home&type=' . $folder .'">' . $folder .'</a></li>';
         } else {
-
+          echo '<li><a class="nav_link" id="others" href="index.php?p=home&type=others">Autres</a></li>';
         }
     }
-    echo '<li><a class="nav_link" id="others" href="index.php?p=home&type=others">Autres</a></li>';
+
 }
+
+function is_empty(){
+    $folders = scandir('pictures');
+    $folders = remover($folders);
+    if(empty($folders)){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+    
+}
+
 

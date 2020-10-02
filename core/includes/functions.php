@@ -51,7 +51,10 @@ function get_all(){
 function loop_pictures($datas, $tag = ""){
    if($tag == "others"){
     foreach($datas as $data){
+
+        echo "<div class='post'>"; 
         echo "<img src='pictures/". $data ."'>";
+        echo "</div>"; 
     }
    } else {
     foreach($datas as $data){
@@ -69,7 +72,7 @@ function get_tags(){
         if(!is_file('pictures/' . $folder)){
             echo '<li><a class="nav_link" id="' . $folder .'" href="index.php?p=home&type=' . $folder .'">' . $folder .'</a></li>';
         } else {
-          echo '<li><a class="nav_link" id="others" href="index.php?p=home&type=others">Autres</a></li>';
+
         }
     }
 

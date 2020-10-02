@@ -14,7 +14,7 @@
                 <ul>
                     <li class="active"><a class="nav_link" href="index.php?p=home">Tous</a></li>
                     <?php get_tags(); ?>
-                </ul>
+                    <li><a class="nav_link" href="index.php?p=home&type=others">Autres</a></li>
             </nav>
         </header>
         <main>

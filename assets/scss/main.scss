@@ -1,14 +1,23 @@
-// TO DO
-// Revoir les typos
-
 select { 
     outline:none; 
 }
+@font-face {
+    font-family: 'Manrope';
+    font-weight: medium;
+    src: url("assets/fonts/Manrope-Medium.ttf") format("truetype");
+}
 
+@font-face {
+    font-family: 'Manrope';
+    font-weight: bold;
+    src: url("assets/fonts/Manrope-Semibold.ttf") format("truetype");
+}
 body{
     margin:0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
+
+
 
 header{
     height:200px;
@@ -90,7 +99,28 @@ main{
         width:auto;
         height:100%;
     }
+    p {
+        font-weight: medium;
+        color: #008DF3;
     }
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    padding:0;
+    margin:0;
+    font-weight: 700;
+
+}
+
+.empty {
+    width: 200px;
+    height: 200px;
 }
 
 .button_large {

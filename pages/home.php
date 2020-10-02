@@ -10,4 +10,3 @@ if(is_empty()){
         loop_pictures(get_all());
     }
 }
-?>

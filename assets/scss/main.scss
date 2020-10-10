@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 body{
     margin:0;
     font-family: 'Work Sans', sans-serif;
@@ -72,3 +73,151 @@ main{
         margin:10px;
     }
 }
+=======
+select {
+  outline: none;
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: medium;
+  src: url("assets/fonts/Manrope-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-weight: bold;
+  src: url("assets/fonts/Manrope-Semibold.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  nav {
+    height: 50px;
+    width: 100%;
+  }
+  h1 {
+    margin-left: 20px;
+    font-size: 40px;
+    background: linear-gradient(
+      90deg,
+      rgba(204, 187, 219, 1) 100%,
+      rgba(0, 81, 99, 0) 0%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  ul {
+    display: flex;
+    margin-top: -90px;
+    margin-left: 100px;
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+
+    h2 {
+      margin-left: 15px;
+    }
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 30px;
+      width: 70px;
+      border-radius: 50px;
+      margin-left: 10px;
+      border-radius: 6px;
+
+      a {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: $primary;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .active {
+      background-color: $selected;
+      border-radius: 6px;
+      a {
+        color: $primary;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .post {
+    min-width: 30px;
+    width: auto;
+    max-width: 1000px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    img {
+      width: auto;
+      height: 100%;
+    }
+    p {
+      font-weight: medium;
+      color: #008df3;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.empty {
+  width: 200px;
+  height: 200px;
+}
+
+.button_large {
+  background-color: #008df3; // ##e60054;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: $typo_link;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+.button_large:hover {
+  background-color: #008df3; // #de1f65;
+}
+.button_large:active {
+  position: relative;
+  top: 1px;
+}
+
+.button_add {
+  background-image: url("./img/add.svg");
+}
+>>>>>>> Stashed changes

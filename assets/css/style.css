@@ -97,7 +97,7 @@ main .post img {
 }
 main .post p {
   font-weight: medium;
-  color: #008DF3;
+  color: #008df3;
 }
 
 .center {
@@ -117,7 +117,7 @@ main .post p {
 }
 
 .button_large {
-  background-color: #008DF3;
+  background-color: #008df3;
   border-radius: 42px;
   display: inline-block;
   cursor: pointer;
@@ -128,7 +128,7 @@ main .post p {
 }
 
 .button_large:hover {
-  background-color: #008DF3;
+  background-color: #008df3;
 }
 
 .button_large:active {
@@ -139,3 +139,45 @@ main .post p {
 .button_add {
   background-image: url("./img/add.svg");
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+
+.empty {
+  width: 200px;
+  height: 200px;
+}
+
+.button_large {
+  background-color: #008df3;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.button_large:hover {
+  background-color: #008df3;
+}
+
+.button_large:active {
+  position: relative;
+  top: 1px;
+}
+
+.button_add {
+  background-image: url("./img/add.svg");
+}
+
+/*# sourceMappingURL=style.css.map */

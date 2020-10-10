@@ -1,6 +1,8 @@
 select {
   outline: none;
 }
+
+//load local fonts
 @font-face {
   font-family: "Manrope";
   font-weight: medium;
@@ -15,6 +17,7 @@ select {
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden; //horizontal scrollbar disabled
 }
 
 header {
